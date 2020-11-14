@@ -20,7 +20,7 @@ header {
     padding: 0 50px;
     margin: 0px auto;
     /* background: whitesmoke; */
-    height: 700px;
+    height: 600px;
     display: grid;
     grid-template-columns: 800px 400px;
     grid-gap: 40px;
@@ -144,7 +144,7 @@ header {
 .table {
     text-align: center;
     width: 200px;
-    height: 150px;
+    height: 100px;
     background: rgb(63, 207, 164);
     padding: 10px;
     margin: 0 auto;
@@ -190,4 +190,106 @@ header {
 
 .res-icon {
     height: 20px;
+}
+
+.table tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* phone icon */
+
+@media only screen and (max-width:667px) {
+    * {
+        font-size: 16px;
+    }
+    .canvas {
+        width: 100%;
+        padding: 0 0px;
+        margin: 0px auto;
+        /* background: whitesmoke; */
+        height: 400px;
+        display: grid;
+        grid-template-areas: "player" "result";
+        grid-template-columns: auto;
+        grid-gap: 0px;
+    }
+    .container {
+        padding: 0;
+    }
+    .computer_result {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        box-shadow: -1px 1px 5px;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+        box-shadow: -1px 1px 5px;
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+    .computer_canvas {
+        height: 150px;
+        position: relative;
+        text-align: center;
+        padding-top: 0px;
+        box-sizing: border-box;
+    }
+    .computer_canvas h1 {
+        margin-bottom: 0px;
+    }
+    .player_canvas {
+        height: 200px;
+        padding-top: 40px;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: rgb(117, 117, 117);
+    }
+    .player_choice {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .canv {
+        width: 300px;
+    }
+    .result-data {
+        height: 145px;
+    }
+    .result-icon {
+        height: 5px;
+    }
+    .history {
+        height: 250px;
+        padding-top: 25px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .comhistory {
+        margin: 5px;
+    }
+    .plyrhistory {
+        margin: 5px;
+    }
+    .table {
+        text-align: center;
+        width: 250px;
+        height: 100px;
+        background: rgb(63, 207, 164);
+        padding: 15px;
+        margin: 0 auto;
+    }
+    .table tr {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .history td {
+        font-size: 16px;
+    }
 }
